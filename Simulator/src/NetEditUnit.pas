@@ -11,7 +11,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, StdCtrls, StrUtils,
 
-  NeuronManager,Neuron,Renderer, ExtCtrls, ComCtrls;
+  NeuronManager,Neuron,Renderer, ExtCtrls, ComCtrls, Vcl.Mask;
 
 type
   TNetForm = class(TForm)

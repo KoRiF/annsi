@@ -141,8 +141,8 @@ begin
     end;
 
 
-    Connections.Cells[0,0]:='Verbunden mit: ';
-    Connections.Cells[1,0]:='Gewicht: ';
+    Connections.Cells[0,0]:='Attached to: ';
+    Connections.Cells[1,0]:='Weight: ';
 
     if self.Neuron.Neurons.Count>0 then
     begin

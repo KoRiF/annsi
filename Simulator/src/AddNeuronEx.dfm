@@ -3,7 +3,7 @@ object addNeuronExtended: TaddNeuronExtended
   Top = 177
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Einf'#252'gen Erweitert'
+  Caption = 'Paste advanced...'
   ClientHeight = 287
   ClientWidth = 338
   Color = clBtnFace
@@ -22,42 +22,42 @@ object addNeuronExtended: TaddNeuronExtended
     Top = 16
     Width = 38
     Height = 13
-    Caption = 'Anzahl: '
+    Caption = 'Amount: '
   end
   object Label2: TLabel
     Left = 176
     Top = 16
     Width = 74
     Height = 13
-    Caption = 'Neuronen Typ: '
+    Caption = 'Neuron''s Type: '
   end
   object Label3: TLabel
     Left = 176
     Top = 64
     Width = 102
     Height = 13
-    Caption = 'Aktivierungsfunktion: '
+    Caption = 'Activation function: '
   end
   object Label4: TLabel
     Left = 8
     Top = 112
     Width = 56
     Height = 13
-    Caption = 'Aktivierung:'
+    Caption = 'Activation:'
   end
   object Label5: TLabel
     Left = 8
     Top = 64
     Width = 45
     Height = 13
-    Caption = 'Eingabe: '
+    Caption = 'Input: '
   end
   object Label6: TLabel
     Left = 176
     Top = 112
     Width = 63
     Height = 13
-    Caption = 'Schwellwert: '
+    Caption = 'Threshold: '
   end
   object Num: TEdit
     Left = 8
@@ -91,10 +91,10 @@ object addNeuronExtended: TaddNeuronExtended
     ItemHeight = 16
     ItemIndex = 0
     TabOrder = 2
-    Text = 'Identit'#228't'
+    Text = 'Identity'
     Items.Strings = (
-      'Identit'#228't'
-      'Bin'#228'r'
+      'Identity'
+      'Binary'
       'Linear'
       'Sinus'
       'Sigmoid'
@@ -129,7 +129,7 @@ object addNeuronExtended: TaddNeuronExtended
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Erstellen'
+    Caption = 'Create'
     TabOrder = 6
     OnClick = btCreateClick
   end
@@ -138,7 +138,7 @@ object addNeuronExtended: TaddNeuronExtended
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Abbrechen'
+    Caption = 'Cancel'
     TabOrder = 7
     OnClick = btCancelClick
   end
@@ -154,7 +154,7 @@ object addNeuronExtended: TaddNeuronExtended
       Top = 24
       Width = 38
       Height = 16
-      Caption = 'Breite:'
+      Caption = 'Width:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -15

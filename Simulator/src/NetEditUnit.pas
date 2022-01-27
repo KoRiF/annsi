@@ -158,13 +158,13 @@ procedure TNetForm.updateGrids();
 var i,numInp,numOut:Integer;
 begin
   InputGrid.Cells[0,0]:='Id';
-  InputGrid.Cells[1,0]:='Eingabe';
+  InputGrid.Cells[1,0]:='Input';
 
   OutputGrid.Cells[0,0]:='Id';
-  OutputGrid.Cells[1,0]:='Ausgabe';
+  OutputGrid.Cells[1,0]:='Output';
 
   ShouldGrid.Cells[0,0]:='Id';
-  ShouldGrid.Cells[1,0]:='Ausgabe';
+  ShouldGrid.Cells[1,0]:='Output';
 
   numInp:=0;
   numOut:=0;

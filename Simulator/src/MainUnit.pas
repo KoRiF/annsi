@@ -11,7 +11,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Menus, ComCtrls, ToolWin, ExtCtrls, ImgList,AboutUnit, StrUtils ,
 
-  Neuron,NeuronManager,Renderer,Unit1, StdCtrls, Options;
+  Neuron,NeuronManager,Renderer,Unit1, StdCtrls, Options, System.ImageList;     //, System.ImageList ??
 
 type
   TMainForm = class(TForm)

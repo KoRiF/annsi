@@ -3,7 +3,7 @@ object NetForm: TNetForm
   Top = 96
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'Netzeditor'
+  Caption = 'Mesh Editor'
   ClientHeight = 580
   ClientWidth = 681
   Color = clBtnFace
@@ -94,7 +94,7 @@ object NetForm: TNetForm
     Top = 408
     Width = 113
     Height = 17
-    Caption = 'Setze 0'
+    Caption = 'Set 0'
     TabOrder = 0
   end
   object TrainingSet: TPageControl
@@ -106,13 +106,13 @@ object NetForm: TNetForm
     TabOrder = 1
     OnChange = TrainingSetChange
     object TabSheet1: TTabSheet
-      Caption = 'Lerneditor'
+      Caption = 'Learning editor'
       object Label3: TLabel
         Left = 272
         Top = 32
         Width = 69
         Height = 16
-        Caption = 'Soll-Wert:'
+        Caption = 'Target-Value:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -15
@@ -125,7 +125,7 @@ object NetForm: TNetForm
         Top = 32
         Width = 103
         Height = 16
-        Caption = 'Output Schicht:'
+        Caption = 'Output Layer:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -15
@@ -138,7 +138,7 @@ object NetForm: TNetForm
         Top = 32
         Width = 92
         Height = 16
-        Caption = 'Input Schicht:'
+        Caption = 'Input Layer:'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -15
@@ -151,14 +151,14 @@ object NetForm: TNetForm
         Top = 436
         Width = 649
         Height = 105
-        Caption = 'Netzfunktionen'
+        Caption = 'Network function'
         TabOrder = 5
         object btnProcess: TButton
           Left = 8
           Top = 32
           Width = 75
           Height = 25
-          Caption = 'Durchlauf'
+          Caption = 'Run'
           TabOrder = 0
           OnClick = btnProcessClick
         end
@@ -167,7 +167,7 @@ object NetForm: TNetForm
           Top = 72
           Width = 75
           Height = 25
-          Caption = 'Zur'#252'cksetzen'
+          Caption = 'Reset'
           TabOrder = 1
           OnClick = btnResetClick
         end
@@ -176,7 +176,7 @@ object NetForm: TNetForm
           Top = 32
           Width = 75
           Height = 25
-          Caption = 'Trainiere'
+          Caption = 'Train'
           TabOrder = 2
           OnClick = btnTrainClick
         end
@@ -187,7 +187,7 @@ object NetForm: TNetForm
           Height = 21
           EditLabel.Width = 53
           EditLabel.Height = 13
-          EditLabel.Caption = 'Iterationen:'
+          EditLabel.Caption = 'Iterations:'
           TabOrder = 3
           Text = '0'
         end
@@ -198,7 +198,7 @@ object NetForm: TNetForm
           Height = 21
           EditLabel.Width = 50
           EditLabel.Height = 13
-          EditLabel.Caption = 'Fehlerrate:'
+          EditLabel.Caption = 'Error rate:'
           TabOrder = 4
           Text = '0,001'
         end
@@ -260,7 +260,7 @@ object NetForm: TNetForm
         Top = 408
         Width = 113
         Height = 17
-        Caption = 'Setze Min'
+        Caption = 'Set Min'
         TabOrder = 3
         OnClick = InpSet0Click
       end
@@ -275,14 +275,14 @@ object NetForm: TNetForm
           Top = 8
           Width = 55
           Height = 13
-          Caption = 'Epochen: 0'
+          Caption = 'Epochs: 0'
         end
         object deltaTime: TLabel
           Left = 16
           Top = 32
           Width = 109
           Height = 13
-          Caption = 'Zeit: 0 ms = 0 s = 0 min'
+          Caption = 'Time: 0 ms = 0 s = 0 min'
         end
       end
       object GroupBox1: TGroupBox
@@ -290,7 +290,7 @@ object NetForm: TNetForm
         Top = 48
         Width = 249
         Height = 369
-        Caption = 'Muster'
+        Caption = 'Sample'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -15
@@ -303,7 +303,7 @@ object NetForm: TNetForm
           Top = 120
           Width = 73
           Height = 25
-          Caption = 'Hinzuf'#252'gen'
+          Caption = 'Add'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -327,7 +327,7 @@ object NetForm: TNetForm
           Top = 160
           Width = 73
           Height = 25
-          Caption = 'Entfernen'
+          Caption = 'Remove'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -358,7 +358,7 @@ object NetForm: TNetForm
           Top = 80
           Width = 75
           Height = 25
-          Caption = #196'ndern'
+          Caption = 'Edit'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -373,7 +373,7 @@ object NetForm: TNetForm
           Top = 200
           Width = 75
           Height = 25
-          Caption = 'Speichern'
+          Caption = 'Save'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -388,7 +388,7 @@ object NetForm: TNetForm
           Top = 240
           Width = 75
           Height = 25
-          Caption = 'Laden'
+          Caption = 'Load'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
@@ -404,13 +404,13 @@ object NetForm: TNetForm
         Top = 408
         Width = 113
         Height = 17
-        Caption = 'Setze Min'
+        Caption = 'Set Min'
         TabOrder = 7
         OnClick = ShouldSet0Click
       end
     end
     object TabSheet2: TTabSheet
-      Caption = 'Grafikmapper'
+      Caption = 'Graphics Mapper'
       ImageIndex = 1
       OnContextPopup = TabSheet2ContextPopup
       OnShow = TabSheet2Show
@@ -432,7 +432,7 @@ object NetForm: TNetForm
         Top = 352
         Width = 75
         Height = 25
-        Caption = 'L'#246'schen'
+        Caption = 'Clear'
         TabOrder = 1
         OnClick = clearClick
       end
@@ -441,7 +441,7 @@ object NetForm: TNetForm
         Top = 352
         Width = 75
         Height = 25
-        Caption = 'L'#246'schen'
+        Caption = 'Clear'
         TabOrder = 2
         OnClick = clearGridClick
       end
@@ -462,7 +462,7 @@ object NetForm: TNetForm
         Top = 352
         Width = 225
         Height = 57
-        Caption = 'Ausdehnung'
+        Caption = 'Extent'
         TabOrder = 4
         object Label4: TLabel
           Left = 8
@@ -512,7 +512,7 @@ object NetForm: TNetForm
         Top = 352
         Width = 75
         Height = 25
-        Caption = 'Rasterisiere'
+        Caption = 'Rasterize'
         TabOrder = 5
         OnClick = btnRasterClick
       end
@@ -521,14 +521,14 @@ object NetForm: TNetForm
         Top = 416
         Width = 313
         Height = 65
-        Caption = 'Abbilden auf: '
+        Caption = 'Map on: '
         TabOrder = 6
         object mapInput: TButton
           Left = 8
           Top = 24
           Width = 75
           Height = 25
-          Caption = 'Eingabe'
+          Caption = 'Input'
           TabOrder = 0
           OnClick = mapInputClick
         end
@@ -537,7 +537,7 @@ object NetForm: TNetForm
           Top = 24
           Width = 75
           Height = 25
-          Caption = 'Soll-Wert'
+          Caption = 'Target Value'
           TabOrder = 1
           OnClick = SetValueClick
         end
@@ -547,7 +547,7 @@ object NetForm: TNetForm
         Top = 416
         Width = 225
         Height = 65
-        Caption = 'Wertebereich'
+        Caption = 'Value Range'
         TabOrder = 7
         object Label6: TLabel
           Left = 8

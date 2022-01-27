@@ -723,7 +723,7 @@ begin
 
     if (self.m_selectedNeuron>=0) then
     begin
-      StatusBar.Panels.Items[0].Text:='Aktion: Optionen';
+      StatusBar.Panels.Items[0].Text:='Action: Options';
       OptionsMenu.Neuron:=neuralNet.getNeuron(self.m_selectedNeuron);
       OptionsMenu.neuralNet:=neuralNet;
       OptionsMenu.m_width:=self.ClientWidth;
@@ -731,7 +731,7 @@ begin
       OptionsMenu.Show;
     end
     else
-      ShowMessage('Keine Neuronen ausgewählt');
+      ShowMessage('No neurons selected');
 
 end;
 
@@ -905,11 +905,11 @@ begin
             end;
         5: begin
              StatusBar.Panels.Items[0].Text:='Aktion: Lade...!';
-             debug.Memo1.Lines.Add('Lade Netz...');
+             debug.Memo1.Lines.Add('Load Net...');
             end;
         6: begin
              StatusBar.Panels.Items[0].Text:='Aktion: Netz geladen.';
-             debug.Memo1.Lines.Add('Netz wurde geladen.');
+             debug.Memo1.Lines.Add('Network has been loaded.');
             end;
         7: begin
               command := Copy(TempList.Strings[Line], 6, length(TempList.Strings[Line])-5);

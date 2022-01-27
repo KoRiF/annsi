@@ -30,7 +30,7 @@ object MainForm: TMainForm
     Height = 19
     Panels = <
       item
-        Text = 'Aktion: '
+        Text = 'Action: '
         Width = 150
       end
       item
@@ -38,11 +38,11 @@ object MainForm: TMainForm
         Width = 150
       end
       item
-        Text = 'Neuron Typ: '
+        Text = 'Neuron Type: '
         Width = 150
       end
       item
-        Text = 'Num. Neuron: '
+        Text = 'Neuron Num.: '
         Width = 150
       end>
   end
@@ -73,7 +73,7 @@ object MainForm: TMainForm
     object NewButton: TToolButton
       Left = 8
       Top = 0
-      Hint = 'Neues Netz'
+      Hint = 'New mesh'
       Caption = 'New'
       ImageIndex = 0
       ParentShowHint = False
@@ -83,7 +83,7 @@ object MainForm: TMainForm
     object NeuronSaveButton: TToolButton
       Left = 41
       Top = 0
-      Hint = 'Speichern'
+      Hint = 'Save'
       Caption = 'NeuronSaveButton'
       ImageIndex = 5
       ParentShowHint = False
@@ -93,7 +93,7 @@ object MainForm: TMainForm
     object NeuronLoadButton: TToolButton
       Left = 74
       Top = 0
-      Hint = 'Laden'
+      Hint = 'Load'
       Caption = 'NeuronLoadButton'
       ImageIndex = 6
       ParentShowHint = False
@@ -103,7 +103,7 @@ object MainForm: TMainForm
     object ToolButton14: TToolButton
       Left = 107
       Top = 0
-      Hint = 'Einstellungen'
+      Hint = 'Settings'
       ImageIndex = 16
       ParentShowHint = False
       ShowHint = True
@@ -140,7 +140,7 @@ object MainForm: TMainForm
     object ToolButton8: TToolButton
       Left = 214
       Top = 0
-      Hint = 'Statistik'
+      Hint = 'Statistic'
       Caption = 'ToolButton8'
       ImageIndex = 10
       ParentShowHint = False
@@ -158,7 +158,7 @@ object MainForm: TMainForm
     object NewNeuronButton: TToolButton
       Left = 255
       Top = 0
-      Hint = 'Neuron erstellen'
+      Hint = 'Create Neuron'
       Caption = 'Neuron'
       ImageIndex = 1
       ParentShowHint = False
@@ -168,7 +168,7 @@ object MainForm: TMainForm
     object ToolButton9: TToolButton
       Left = 288
       Top = 0
-      Hint = 'n Neuronen'
+      Hint = 'n Neurons'
       Caption = 'ToolButton9'
       ImageIndex = 11
       ParentShowHint = False
@@ -178,7 +178,7 @@ object MainForm: TMainForm
     object ToolButton12: TToolButton
       Left = 321
       Top = 0
-      Hint = 'Neuronen einf'#252'gen(erweitert)'
+      Hint = 'Insert Neurons(expand)'
       Caption = 'ToolButton12'
       ImageIndex = 14
       ParentShowHint = False
@@ -188,7 +188,7 @@ object MainForm: TMainForm
     object NeuronDeleteButton: TToolButton
       Left = 354
       Top = 0
-      Hint = 'Neuron entfernen'
+      Hint = 'Remove Neuron'
       Caption = 'NeuronDeleteButton'
       ImageIndex = 2
       ParentShowHint = False
@@ -198,8 +198,8 @@ object MainForm: TMainForm
     object NeuronConnetcButton: TToolButton
       Left = 387
       Top = 0
-      Hint = 'Neuronen verbinden'
-      Caption = 'NeuronConnetcButton'
+      Hint = 'Associate Neurons'
+      Caption = 'Connect Neuron'
       ImageIndex = 3
       ParentShowHint = False
       ShowHint = True
@@ -208,7 +208,7 @@ object MainForm: TMainForm
     object NeuronOptionButton: TToolButton
       Left = 420
       Top = 0
-      Hint = 'Optionen anzeigen'
+      Hint = 'Show Options...'
       Caption = 'NeuronOptionButton'
       ImageIndex = 4
       ParentShowHint = False
@@ -226,7 +226,7 @@ object MainForm: TMainForm
     object ToolButton11: TToolButton
       Left = 461
       Top = 0
-      Hint = 'Randomisiere Gewichte'
+      Hint = 'Randomize weights'
       Caption = 'ToolButton11'
       ImageIndex = 13
       ParentShowHint = False
@@ -236,7 +236,7 @@ object MainForm: TMainForm
     object ToolButton13: TToolButton
       Left = 494
       Top = 0
-      Hint = 'Netzeditor'
+      Hint = 'Mesh Editor'
       Caption = 'ToolButton13'
       ImageIndex = 15
       ParentShowHint = False
@@ -246,7 +246,7 @@ object MainForm: TMainForm
     object ToolButton10: TToolButton
       Left = 527
       Top = 0
-      Hint = 'zur'#252'cksetzen'
+      Hint = 'Reset ...'
       Caption = 'ToolButton10'
       ImageIndex = 12
       ParentShowHint = False
@@ -256,7 +256,7 @@ object MainForm: TMainForm
     object ToolButton4: TToolButton
       Left = 560
       Top = 0
-      Hint = 'Starte Netz'
+      Hint = 'Start Mesh'
       Caption = 'ToolButton4'
       ImageIndex = 7
       ParentShowHint = False
@@ -279,7 +279,7 @@ object MainForm: TMainForm
       Top = 8
       Width = 70
       Height = 24
-      Caption = 'Statistik'
+      Caption = 'Statistic'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -19
@@ -292,7 +292,7 @@ object MainForm: TMainForm
       Top = 48
       Width = 114
       Height = 16
-      Caption = 'Neuronen Anzahl  : '
+      Caption = 'Number of neurons  : '
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -13
@@ -318,7 +318,7 @@ object MainForm: TMainForm
       Top = 72
       Width = 114
       Height = 16
-      Caption = 'Input Neuronen      : '
+      Caption = 'Neuron'#39's Input       : '
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -13
@@ -343,7 +343,7 @@ object MainForm: TMainForm
       Top = 96
       Width = 112
       Height = 16
-      Caption = 'Hidden Neuronen :'
+      Caption = 'Hidden Neurons :'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -13
@@ -368,7 +368,7 @@ object MainForm: TMainForm
       Top = 120
       Width = 112
       Height = 16
-      Caption = 'Output Neuronen   :'
+      Caption = 'Output Neurons   :'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -13
@@ -393,7 +393,7 @@ object MainForm: TMainForm
       Top = 144
       Width = 114
       Height = 16
-      Caption = 'Verbindungen        : '
+      Caption = 'Connections        : '
       FocusControl = Statistik
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -419,7 +419,7 @@ object MainForm: TMainForm
       Top = 168
       Width = 110
       Height = 16
-      Caption = ' Selektiert                :'
+      Caption = 'Selection                :'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -13
@@ -470,7 +470,7 @@ object MainForm: TMainForm
       Width = 201
       Height = 41
       Align = alBottom
-      Caption = 'Ausrichtung'
+      Caption = 'Alignment'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -13
@@ -483,7 +483,7 @@ object MainForm: TMainForm
         Top = 16
         Width = 113
         Height = 17
-        Caption = 'rechts'
+        Caption = 'right'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -11
@@ -498,7 +498,7 @@ object MainForm: TMainForm
         Top = 17
         Width = 65
         Height = 16
-        Caption = 'links'
+        Caption = 'left'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -11
@@ -514,9 +514,9 @@ object MainForm: TMainForm
     Left = 120
     Top = 40
     object Datei1: TMenuItem
-      Caption = 'Datei'
+      Caption = 'File'
       object Neu1: TMenuItem
-        Caption = 'Neues Netz'
+        Caption = 'New Mesh'
         ShortCut = 16462
         OnClick = Neu1Click
       end
@@ -524,12 +524,12 @@ object MainForm: TMainForm
         Caption = '-'
       end
       object Netzimportieren1: TMenuItem
-        Caption = 'Netz importieren...'
+        Caption = 'Import Mesh...'
         ShortCut = 16457
         OnClick = Netzimportieren1Click
       end
       object Netzexportieren1: TMenuItem
-        Caption = 'Netz exportieren...'
+        Caption = 'Export Mesh...'
         ShortCut = 16453
         OnClick = Netzexportieren1Click
       end
@@ -537,17 +537,17 @@ object MainForm: TMainForm
         Caption = '-'
       end
       object Einstellungen1: TMenuItem
-        Caption = 'Einstellungen'
+        Caption = 'Settings'
         OnClick = Einstellungen1Click
       end
       object Beenden1: TMenuItem
-        Caption = 'Beenden'
+        Caption = 'Exit'
         ShortCut = 16472
         OnClick = Beenden1Click
       end
     end
     object Bearbeiten1: TMenuItem
-      Caption = 'Bearbeiten'
+      Caption = 'Edit'
       object Undo1: TMenuItem
         Caption = 'Undo'
       end
@@ -558,27 +558,27 @@ object MainForm: TMainForm
         Caption = '-'
       end
       object Selektion1: TMenuItem
-        Caption = 'Selektion'
+        Caption = 'Select'
         object Selektierealle1: TMenuItem
-          Caption = 'Selektiere alle'
+          Caption = 'Select All'
           OnClick = Selektierealle1Click
         end
         object SelektiereInput1: TMenuItem
-          Caption = 'Selektiere Input'
+          Caption = 'Select Inputs'
           OnClick = SelektiereInput1Click
         end
         object SelektiereMiddle1: TMenuItem
-          Caption = 'Selektiere Middle'
+          Caption = 'Select Middle'
           OnClick = SelektiereMiddle1Click
         end
         object SelektiereOutput1: TMenuItem
-          Caption = 'Selektiere Output'
+          Caption = 'Select Outputs'
           OnClick = SelektiereOutput1Click
         end
       end
     end
     object Ansicht1: TMenuItem
-      Caption = 'Ansicht'
+      Caption = 'View'
       object Vergrern1: TMenuItem
         Caption = 'Zoom In'
         ShortCut = 16473
@@ -594,24 +594,24 @@ object MainForm: TMainForm
         OnClick = DebugWindow1Click
       end
       object Ausgabe1: TMenuItem
-        Caption = 'Neuronen'
+        Caption = 'Neurons'
         object Eingabe1: TMenuItem
-          Caption = 'Eingabe'
+          Caption = 'Input'
           ShortCut = 16498
           OnClick = Eingabe1Click
         end
         object Aktivierung1: TMenuItem
-          Caption = 'Aktivierung'
+          Caption = 'Activation'
           ShortCut = 16496
           OnClick = Aktivierung1Click
         end
         object Schwellwert1: TMenuItem
-          Caption = 'Schwellwert'
+          Caption = 'Threshold'
           ShortCut = 16499
           OnClick = Schwellwert1Click
         end
         object Gewicht1: TMenuItem
-          Caption = 'Gewicht'
+          Caption = 'Weight'
           ShortCut = 16497
           OnClick = Gewicht1Click
         end
@@ -623,18 +623,18 @@ object MainForm: TMainForm
         OnClick = Grid1Click
       end
       object Statistik1: TMenuItem
-        Caption = 'Statistik'
+        Caption = 'Statistic'
         OnClick = Statistik1Click
       end
       object Farbe1: TMenuItem
-        Caption = 'Farbe'
+        Caption = 'Color'
         object Statisch1: TMenuItem
-          Caption = 'Statisch'
+          Caption = 'Static'
           Checked = True
           OnClick = Statisch1Click
         end
         object Dynamisch1: TMenuItem
-          Caption = 'Dynamisch'
+          Caption = 'Dynamic'
           OnClick = Dynamisch1Click
         end
       end
@@ -642,36 +642,36 @@ object MainForm: TMainForm
     object Neuron1: TMenuItem
       Caption = 'Neuron'
       object Einfgen1: TMenuItem
-        Caption = 'Einf'#252'gen'
+        Caption = 'Insert'
         ShortCut = 16459
         OnClick = Einfgen1Click
       end
       object Einfgenn1: TMenuItem
-        Caption = 'Einf'#252'gen Anzahl'
+        Caption = 'Insert number'
         OnClick = Einfgenn1Click
       end
       object EinfgenErweitert1: TMenuItem
-        Caption = 'Einf'#252'gen Erweitert'
+        Caption = 'Insert Advanced'
         OnClick = EinfgenErweitert1Click
       end
       object Entferne1: TMenuItem
-        Caption = 'Entfernen'
+        Caption = 'Remove'
         ShortCut = 16452
         OnClick = Entfernen2Click
       end
       object Verbinde3: TMenuItem
-        Caption = 'Verbinde'
+        Caption = 'Connect'
         object Verbinde2: TMenuItem
-          Caption = 'Verbinde/Trenne'
+          Caption = 'Connect/Disconnect'
           ShortCut = 16451
           OnClick = Verbinde1Click
         end
         object MittelSchichte1: TMenuItem
-          Caption = 'Mittel Schicht'
+          Caption = 'Middle Layer'
           OnClick = MittelSchichte1Click
         end
         object AusgabeSchicht2: TMenuItem
-          Caption = 'Ausgabe Schicht'
+          Caption = 'Output Layer'
           OnClick = AusgabeSchicht2Click
         end
       end
@@ -679,30 +679,30 @@ object MainForm: TMainForm
         Caption = '-'
       end
       object Optionen1: TMenuItem
-        Caption = 'Optionen'
+        Caption = 'Options'
         ShortCut = 16463
         OnClick = Optionen1Click
       end
     end
     object Netzwerk1: TMenuItem
-      Caption = 'Netzwerk'
+      Caption = 'Network'
       object RandomisiereVerbindungen1: TMenuItem
-        Caption = 'Randomisiere'
+        Caption = 'Randomize'
         OnClick = RandomisiereVerbindungen1Click
       end
       object Netzeditor1: TMenuItem
-        Caption = 'Netzeditor'
+        Caption = 'Mesh Editor'
         OnClick = Netzeditor1Click
       end
       object N8: TMenuItem
         Caption = '-'
       end
       object Lernrate1: TMenuItem
-        Caption = 'Lernrate'
+        Caption = 'Learning Rate'
         OnClick = Lernrate1Click
       end
       object Lernverzgerung1: TMenuItem
-        Caption = 'Lernverz'#246'gerung'
+        Caption = 'Learning delay'
         OnClick = Lernverzgerung1Click
       end
       object N5: TMenuItem
@@ -713,7 +713,7 @@ object MainForm: TMainForm
         OnClick = ResetClick
       end
       object estphase1: TMenuItem
-        Caption = 'Testphase'
+        Caption = 'Testing'
         ShortCut = 16466
         OnClick = estphase1Click
       end
@@ -742,7 +742,7 @@ object MainForm: TMainForm
     Left = 432
     Top = 248
     Bitmap = {
-      494C010111001300040010001000FF000000FF00FFFFFFFFFFFFFFFF424D3600
+      494C010111001300070010001000FF000000FF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000005000000001002000000000000050
       0000000000000000000000000000000000000000FF000000FF000000FF000000
       FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
@@ -1406,7 +1406,8 @@ object MainForm: TMainForm
       FF00C003F807F007FC038003E007E003F0078001C003E001C0070001C003C001
       00070000C003C00000070000C003C00000070000C00300000007000080010000
       00070001800100010007800180010001001F800180030003017FC003000FC007
-      07FFE007803FE21F9FFFF81FE0FFFFFF}
+      07FFE007803FE21F9FFFF81FE0FFFFFF00000000000000000000000000000000
+      000000000000}
   end
   object Timer1: TTimer
     Interval = 10
@@ -1418,11 +1419,11 @@ object MainForm: TMainForm
     Left = 400
     Top = 168
     object Hinzufgen1: TMenuItem
-      Caption = 'Hinzuf'#252'gen'
+      Caption = 'Insert'
       OnClick = Einfgen1Click
     end
     object HnzufgenErweitert1: TMenuItem
-      Caption = 'Hinzuf'#252'gen Ex'
+      Caption = 'Insert Advanced'
       OnClick = EinfgenErweitert1Click
     end
     object N6: TMenuItem
@@ -1440,21 +1441,21 @@ object MainForm: TMainForm
       Caption = '-'
     end
     object Selektion2: TMenuItem
-      Caption = 'Selektion'
+      Caption = 'Select'
       object SelektiereAlle2: TMenuItem
-        Caption = 'Selektiere Alle'
+        Caption = 'Select All'
         OnClick = Selektierealle1Click
       end
       object SelektiereInput2: TMenuItem
-        Caption = 'Selektiere Input'
+        Caption = 'Select Input'
         OnClick = SelektiereInput1Click
       end
       object SelektiereMiddle2: TMenuItem
-        Caption = 'Selektiere Middle'
+        Caption = 'Select Middle'
         OnClick = SelektiereMiddle1Click
       end
       object SelektiereOutput2: TMenuItem
-        Caption = 'Selektiere Output'
+        Caption = 'Select Output'
         OnClick = SelektiereOutput1Click
       end
     end
@@ -1463,25 +1464,25 @@ object MainForm: TMainForm
     Left = 424
     Top = 168
     object Entfernen2: TMenuItem
-      Caption = 'Entfernen'
+      Caption = 'Remove'
       OnClick = Entfernen2Click
     end
     object Optionen2: TMenuItem
-      Caption = 'Optionen'
+      Caption = 'Options'
       OnClick = Optionen1Click
     end
     object Verbinden1: TMenuItem
-      Caption = 'Verbinden'
+      Caption = 'Connect'
       object Verbinde1: TMenuItem
-        Caption = 'Verbinde/Trenne'
+        Caption = 'Connect/Disconnect'
         OnClick = Verbinde1Click
       end
       object MittlereSchicht1: TMenuItem
-        Caption = 'Mittlere Schicht'
+        Caption = 'Middle Layer'
         OnClick = MittelSchichte1Click
       end
       object AusgabeSchicht1: TMenuItem
-        Caption = 'Ausgabe Schicht'
+        Caption = 'Output Layer'
         OnClick = AusgabeSchicht2Click
       end
     end

@@ -11,7 +11,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Menus, ComCtrls, ToolWin, ExtCtrls, ImgList,AboutUnit, StrUtils ,
 
-  Neuron,NeuronManager,Renderer,Unit1, StdCtrls, Options;
+  Neuron,NeuronManager,Renderer,Unit1, StdCtrls, Options, System.ImageList;     //, System.ImageList ??
 
 type
   TMainForm = class(TForm)
@@ -723,7 +723,7 @@ begin
 
     if (self.m_selectedNeuron>=0) then
     begin
-      StatusBar.Panels.Items[0].Text:='Aktion: Optionen';
+      StatusBar.Panels.Items[0].Text:='Action: Options';
       OptionsMenu.Neuron:=neuralNet.getNeuron(self.m_selectedNeuron);
       OptionsMenu.neuralNet:=neuralNet;
       OptionsMenu.m_width:=self.ClientWidth;
@@ -731,7 +731,7 @@ begin
       OptionsMenu.Show;
     end
     else
-      ShowMessage('Keine Neuronen ausgewählt');
+      ShowMessage('No neurons selected');
 
 end;
 

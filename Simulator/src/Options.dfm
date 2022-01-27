@@ -3,7 +3,7 @@ object settings: Tsettings
   Top = 271
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'Einstellungen'
+  Caption = 'Settings'
   ClientHeight = 216
   ClientWidth = 329
   Color = clBtnFace
@@ -22,7 +22,7 @@ object settings: Tsettings
     Top = 8
     Width = 158
     Height = 16
-    Caption = 'Scroll Geschwindigkeit'
+    Caption = 'Scroll Speed'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -35,7 +35,7 @@ object settings: Tsettings
     Top = 40
     Width = 121
     Height = 16
-    Caption = 'Hintergrundfarbe:'
+    Caption = 'Background color:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -48,7 +48,7 @@ object settings: Tsettings
     Top = 64
     Width = 70
     Height = 16
-    Caption = 'Gridfarbe:'
+    Caption = 'Grid color:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -100,7 +100,7 @@ object settings: Tsettings
       Top = 9
       Width = 112
       Height = 16
-      Caption = 'Neuronenfarben'
+      Caption = 'Neuron'#39's color'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -113,7 +113,7 @@ object settings: Tsettings
       Top = 32
       Width = 42
       Height = 13
-      Caption = 'selektiert'
+      Caption = 'selection'
       Color = clBtnFace
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
@@ -153,7 +153,7 @@ object settings: Tsettings
       Top = 56
       Width = 66
       Height = 13
-      Caption = 'Verbindungen'
+      Caption = 'Connections'
       OnClick = Label9Click
     end
     object Label10: TLabel
@@ -161,7 +161,7 @@ object settings: Tsettings
       Top = 56
       Width = 82
       Height = 13
-      Caption = 'Auswahlrechteck'
+      Caption = 'Selection rectangle'
       OnClick = Label10Click
     end
     object Label11: TLabel
@@ -169,7 +169,7 @@ object settings: Tsettings
       Top = 56
       Width = 54
       Height = 13
-      Caption = 'Schriftfarbe'
+      Caption = 'Font color'
       OnClick = Label11Click
     end
   end

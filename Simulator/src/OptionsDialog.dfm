@@ -3,7 +3,7 @@ object OptionsMenu: TOptionsMenu
   Top = 179
   BorderIcons = []
   BorderStyle = bsDialog
-  Caption = 'Optionen'
+  Caption = 'Options'
   ClientHeight = 380
   ClientWidth = 229
   Color = clBtnFace
@@ -35,7 +35,7 @@ object OptionsMenu: TOptionsMenu
         Top = 8
         Width = 116
         Height = 20
-        Caption = ' Neuronenart: '
+        Caption = ' Neuron type: '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -16
@@ -48,7 +48,7 @@ object OptionsMenu: TOptionsMenu
         Top = 120
         Width = 77
         Height = 20
-        Caption = 'Eingabe: '
+        Caption = 'Input: '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -16
@@ -61,7 +61,7 @@ object OptionsMenu: TOptionsMenu
         Top = 176
         Width = 106
         Height = 20
-        Caption = 'Schwellwert: '
+        Caption = 'Threshold: '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -16
@@ -74,7 +74,7 @@ object OptionsMenu: TOptionsMenu
         Top = 232
         Width = 100
         Height = 20
-        Caption = 'Aktivierung: '
+        Caption = 'Activation: '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -16
@@ -87,7 +87,7 @@ object OptionsMenu: TOptionsMenu
         Top = 64
         Width = 165
         Height = 20
-        Caption = 'Aktivierungfunktion: '
+        Caption = 'Activation function: '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -16
@@ -100,7 +100,7 @@ object OptionsMenu: TOptionsMenu
         Top = 32
         Width = 161
         Height = 19
-        Hint = 'Neuronen Art'
+        Hint = 'Neuron Type'
         Style = csOwnerDrawFixed
         ItemHeight = 13
         ParentShowHint = False
@@ -142,8 +142,8 @@ object OptionsMenu: TOptionsMenu
         ItemHeight = 16
         TabOrder = 4
         Items.Strings = (
-          'Identit'#228't'
-          'Bin'#228'r'
+          'Identity'
+          'Binary'
           'Linear'
           'Sinus'
           'Sigmoid'
@@ -151,7 +151,7 @@ object OptionsMenu: TOptionsMenu
       end
     end
     object TabSheet2: TTabSheet
-      Caption = 'Verbindung'
+      Caption = 'Connection'
       ImageIndex = 1
       object Connections: TStringGrid
         Left = 8
@@ -185,7 +185,7 @@ object OptionsMenu: TOptionsMenu
     Top = 344
     Width = 75
     Height = 25
-    Caption = 'Abbrechen'
+    Caption = 'Cancel'
     TabOrder = 1
     OnClick = Button2Click
   end

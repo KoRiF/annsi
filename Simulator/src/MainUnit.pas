@@ -905,11 +905,11 @@ begin
             end;
         5: begin
              StatusBar.Panels.Items[0].Text:='Aktion: Lade...!';
-             debug.Memo1.Lines.Add('Lade Netz...');
+             debug.Memo1.Lines.Add('Load Net...');
             end;
         6: begin
              StatusBar.Panels.Items[0].Text:='Aktion: Netz geladen.';
-             debug.Memo1.Lines.Add('Netz wurde geladen.');
+             debug.Memo1.Lines.Add('Network has been loaded.');
             end;
         7: begin
               command := Copy(TempList.Strings[Line], 6, length(TempList.Strings[Line])-5);

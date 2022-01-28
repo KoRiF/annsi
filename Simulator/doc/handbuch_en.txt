@@ -1,0 +1,99 @@
+ANNSi Manual:
+ 
+This manual requires knowledge of what an artificial neural 
+network is and what it is used for.
+If you don't know, please refer to Wikipedia for more information
+or in our bilingual forum: http://board.badworld-crew.com
+ 
+Contents:
+ 
+1 neurons
+ 1.1 Neuron Types
+ 1.2 Activation Features
+ 1.3 Connections
+ 
+2 mesh
+ 2.1 Mesh Editor
+ 2.1.1 Learning Editor
+ 2.1.2 Graphics Mapper
+ 2.1.3 Learning
+ 2.1.4 Run
+ 
+1 - Neurons:
+_____________
+ 
+Neurons are the smallest part of a neural network.
+They have an activation function, an input value and
+are networked by connections with other neurons.
+ 
+1.1 Neuron types:
+ 
+There are 3 different types of neurons:
+ 
+Input or input neurons:
+This type of neuron takes input from the user and gives
+pass them on to the hidden or middle layer according to certain criteria.
+ 
+Middle or Hidden Neurons:
+The middle layer neurons are also called hidden because they
+are not visible from the outside. The user only interacts with input and
+Output neurons, which in turn communicate with the middle ones.
+ 
+Output neurons:
+This type of neuron delivers the results of an evaluation session.
+ 
+1.2 Activation Features:
+ 
+ The activation function indicates how decisions are made
+ whether the neuron "fires", i.e. is activated.
+ 
+1.3 Connections:
+ 
+ Connections allow neurons to communicate with each other.
+ They have a weight that is multiplied by the connection's input value
+ and then passed on to the receiver neuron.
+ 
+2 mesh:
+ 
+2.1 Mesh Editor
+ 
+ The mesh editor allows editing the learning material i.e. what output
+ Neurons are supposed to have which value at which values of the input.
+ 
+ 2.1.1 Learning Editor:
+ 
+ The table on the left shows all input neurons and their input values, the middle one
+ The table shows the ACTUAL values of the output neurons and the table on the right the TARGET
+ Values of output neurons.
+ The pattern manager is located on the right edge.
+To add a new learning pattern, click Add and then click the
+Sample. Now you can either enter the values of the input neurons yourself or
+For example, you use the graphics mapper instead.
+Now enter the target values and confirm with "Change".
+ 
+2.1.2 Graphics mapper:
+ 
+If you want to assign a letter or number to an input net,
+then click on a pattern, choose the graphics mapper and specify the extent
+of the grid field. If you have created an 8 by 8 input neuron array, set it
+the expansion to 8 by 8.
+Then a pattern must be drawn in the left white field and click "Rasterize"
+be clicked. Once the rasterization process is complete, click "Map to" at the bottom
+Input" and switch back to the learning editor. There you can still set the target values on the right and
+confirm with "Change".
+ 
+2.1.3 Learning:
+ 
+Once you have completed the learning patterns, click Train and wait for the
+process has been completed. At the bottom right you can see the number of previous attempts to connect to the network
+improve. The time is displayed after the learning process is complete.
+To set a maximum limit of iterations, change the field containing "0" before learning
+to any value greater than zero.
+ 
+2.1.4 Run:
+ 
+Once your mesh has finished learning you can add new test patterns and either use the graphics mapper
+or assign input values to the learning editor. Then confirm again with Change and click on "Run".
+ After fractions of a second you should see the actual values determined for the output neurons (middle table)
+and can evaluate your test based on the results. If unsatisfactory, change
+ the type of patterns, their number or the network topology.
